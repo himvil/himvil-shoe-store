@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HIMVIL | Shoe Store</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="logo" href="#">HIMVIL<span>.</span></a><nav><a href="#shop">Shop</a><a href="#new">New</a><a href="#contact">Contact</a></nav><button onclick="openCart()">CART <b id="count">0</b></button></header>
+<section class="hero"><p>HIMVIL SHOE STORE</p><h1>STEP INTO<br><span>YOUR STYLE.</span></h1><div>Premium footwear • Pan-India delivery • Order directly through WhatsApp.</div><a href="#shop">SHOP NOW</a></section>
+<section id="shop"><div class="title"><div><small>COLLECTION</small><h2>Featured Footwear</h2></div><select id="filter" onchange="render()"><option value="all">All Products</option><option value="men">Men</option><option value="women">Women</option><option value="under3000">Under ₹3,000</option></select></div><div id="products" class="grid"></div></section>
+<div id="overlay" onclick="closeCart(event)"><aside onclick="event.stopPropagation()"><div class="carthead"><h2>Your Cart</h2><button onclick="closeCart()">×</button></div><div id="items"></div><strong class="total">Total <span id="total">₹0</span></strong><button class="order" onclick="checkout()">ORDER VIA WHATSAPP</button></aside></div>
+<footer id="contact"><b>HIMVIL</b><span>Premium footwear • Pan-India delivery</span><a href="https://instagram.com/himvil.sneakstore" target="_blank">@himvil.sneakstore</a></footer>
+<script src="script.js"></script>
+</body></html>
